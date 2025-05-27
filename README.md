@@ -60,3 +60,82 @@ This project is a full-stack web application with:
 
 ## Project Structure
 
+```
+/project
+├── frontend            # React frontend application
+│   ├── public          # Static assets
+│   ├── src             # Source code
+│   │   ├── components  # React components
+│   │   │   ├── ui      # UI components
+│   │   │   │   ├── aceternity  # Custom UI components (Aceternity inspired)
+│   │   │   ├── cart            # Cart related components
+│   │   │   ├── checkout        # Checkout flow components
+│   │   │   └── ...             # Other components
+│   │   ├── lib         # Utility functions and API
+│   │   │   ├── api.ts  # API client functions
+│   │   │   └── utils.ts # Utility functions
+│   │   ├── App.tsx     # Main application component
+│   │   ├── main.tsx    # Application entry point
+│   │   └── index.css   # Global styles
+│   ├── index.html      # HTML entry point
+│   ├── tsconfig.json   # TypeScript configuration
+│   ├── vite.config.ts  # Vite configuration
+│   └── package.json    # Dependencies and scripts
+│
+└── backend             # Express backend application
+    ├── src             # Source code
+    │   └── index.ts    # Server entry point
+    ├── dist            # Compiled JavaScript
+    ├── tsconfig.json   # TypeScript configuration
+    └── package.json    # Dependencies and scripts
+```
+
+## Frontend Setup
+
+### Key Components
+
+#### Core Pages
+- **App.tsx**: Main application component with routing logic
+- **Hero.tsx**: Landing page hero section with featured product
+- **LookbookShowcase.tsx**: Grid layout of product collections
+- **ProductPage.tsx**: Detailed product information page
+- **CartPage.tsx**: Shopping cart page with item details
+- **CheckoutPage.tsx**: Two-step checkout process
+
+#### UI Components
+- **Navigation.tsx**: Responsive navigation header
+- **Footer.tsx**: Site footer with links and contact information
+- **ProductDetails.tsx**: Product information display with size selection
+- **ProductInfo.tsx**: Accordion sections with additional product details
+- **Testimonial.tsx**: Customer testimonial carousel
+
+#### Aceternity UI Components
+- **input-otp.tsx**: One-time password input with advanced features
+- **grid-pattern.tsx**: Customizable grid background pattern generator
+- **card-hover-effect.tsx**: Interactive card components with hover animations
+- **spotlight.tsx**: Dynamic spotlight effect following cursor
+- **text-generate-effect.tsx**: Typewriter text animation effect
+
+## Backend
+
+The backend serves as a simple API providing:
+- Product data retrieval
+- Order processing
+
+## Styling Approach
+
+The project uses TailwindCSS 4 with:
+- Dark mode as the primary theme
+- Custom color variables for consistent styling
+- Responsive design for all screen sizes
+- Animation utilities for interactive elements
+
+## Future Improvements
+
+- User authentication and account management
+- Product filtering and search functionality
+- Persistent shopping cart
+- Database integration for product and order storage
+- Payment gateway integration
+- Admin dashboard for product management
+
